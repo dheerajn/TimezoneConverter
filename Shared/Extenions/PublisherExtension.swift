@@ -2,7 +2,7 @@
 //  PublisherExtension.swift
 //  TimezoneConverter
 //
-//  Created by Dheeraj Neelam on 2/17/21.
+//  Created by Dheeru Neelam on 2/17/21.
 //  Copyright © 2021 SwiftUIJam. All rights reserved.
 //
 

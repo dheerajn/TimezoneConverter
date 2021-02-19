@@ -2,7 +2,7 @@
 //  MainTabBarView.swift
 //  TimezoneConverter
 //
-//  Created by Dheeraj Neelam on 2/18/21.
+//  Created by Dheeru Neelam on 2/18/21.
 //  Copyright © 2021 SwiftUIJam. All rights reserved.
 //
 
@@ -19,7 +19,7 @@ struct MainTabBarView: View {
     
     var body: some View {
         TabView(selection: $selectTabBar) {
-            ContentView()
+            HomeTabBarView()
                 .tabItem {
                     Image(systemName: MainTabBarViewItems.home.imageName)
                     Text(MainTabBarViewItems.home.title)
