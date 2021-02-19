@@ -51,7 +51,6 @@ extension NetworkCalls {
     func getTimezones(location: Location) -> AnyPublisher<TimezoneResult, Never> {
         
         let parameters: [String: Any]? = nil
-//        let timezoneUrlString = "https://timezone.abstractapi.com/v1/current_time"
         
         var timezoneUrlString = URLComponents(string: "https://timezone.abstractapi.com/v1/current_time")!
 
