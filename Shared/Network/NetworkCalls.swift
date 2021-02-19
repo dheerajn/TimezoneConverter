@@ -13,6 +13,7 @@ typealias TimezoneResult = Result<TimezoneModel, StandardError>
 
 protocol NetworkCalls {
     func getTimezones(currentTime: String) -> AnyPublisher<TimezoneResult, Never>
+    func getTimezones(location: Location) -> AnyPublisher<TimezoneResult, Never>
 }
 
 extension NetworkCalls {
@@ -24,6 +25,43 @@ extension NetworkCalls {
         let timezoneUrlString = "http://...timezone"
         
         return NetworkService(urlString: timezoneUrlString, httpMethod: .post, parameters: parameters).load()
+            .map { (result: Result<TimezoneModel, NetworkError>) -> TimezoneResult in
+                switch result {
+                case .success(let value):
+                    return .success(value)
+                case .failure(let error):
+                    switch error {
+                    case .dataLoadingError(_, let data):
+                        let err = try? JSONDecoder().decode(StandardError.self, from: data)
+                        return .failure(err ?? StandardError.defaultValueWithValidToken)
+                        
+                    case .invalidToken:
+                        return .failure(StandardError.defaultValueWithInValidToken)
+                        
+                    default:
+                        return .failure(StandardError.defaultValueWithValidToken)
+                    }
+                }
+            }
+            .subscribe(on: RunLoop.backgroundWorkScheduler)
+            .receive(on: RunLoop.main)
+            .eraseToAnyPublisher()
+    }
+    
+    func getTimezones(location: Location) -> AnyPublisher<TimezoneResult, Never> {
+        
+        let parameters: [String: Any]? = nil
+//        let timezoneUrlString = "https://timezone.abstractapi.com/v1/current_time"
+        
+        var timezoneUrlString = URLComponents(string: "https://timezone.abstractapi.com/v1/current_time")!
+
+        timezoneUrlString.queryItems = [
+            URLQueryItem(name: "api_key", value: "529f043d73d444649caa77483b0bfd52"),
+            URLQueryItem(name: "location", value: location.description())
+        ]
+        
+        
+        return NetworkService(urlString: timezoneUrlString.string!, httpMethod: .get, parameters: parameters).load()
             .map { (result: Result<TimezoneModel, NetworkError>) -> TimezoneResult in
                 switch result {
                 case .success(let value):
