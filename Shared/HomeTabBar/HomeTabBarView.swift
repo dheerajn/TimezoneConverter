@@ -9,9 +9,13 @@
 import SwiftUI
 
 struct HomeTabBarView: View {
+    @State var searchText: String = ""
+    
     var body: some View {
         NavigationView {
             VStack {
+                SearchBar(text: $searchText)
+                
                 CurrentLocationView()
                     .frame(height: 200)
                     .cornerRadius(20)
