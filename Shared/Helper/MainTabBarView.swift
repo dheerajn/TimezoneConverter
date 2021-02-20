@@ -11,11 +11,11 @@ import SwiftUI
 struct MainTabBarView: View {
     @State var selectTabBar = 0
     
-    init() {
-        UITabBar.appearance().barTintColor = UIColor.black.withAlphaComponent(0.6)
-        UITabBar.appearance().alpha = 1.0
-        UITabBar.appearance().clipsToBounds = true
-    }
+//    init() {
+//        UITabBar.appearance().barTintColor = UIColor.black.withAlphaComponent(0.6)
+//        UITabBar.appearance().alpha = 1.0
+//        UITabBar.appearance().clipsToBounds = true
+//    }
     
     var body: some View {
         TabView(selection: $selectTabBar) {

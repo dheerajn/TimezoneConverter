@@ -11,7 +11,7 @@ import SwiftUI
 struct TimezoneConverterApp: App {
     var body: some Scene {
         WindowGroup {
-            MainTabBarView()
+            OnboardingView()
         }
     }
 }
