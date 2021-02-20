@@ -10,7 +10,8 @@ import SwiftUI
 
 struct MainTabBarView: View {
     @State var selectTabBar = 0
-    
+    @EnvironmentObject var viewRouter: ViewRouter
+
     init() {
         UITabBar.appearance().barTintColor = UIColor.black.withAlphaComponent(0.6)
         UITabBar.appearance().alpha = 1.0
