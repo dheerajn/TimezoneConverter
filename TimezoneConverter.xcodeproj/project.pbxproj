@@ -51,6 +51,8 @@
 		CF841B6E25E1617600604CA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF841B6D25E1617600604CA2 /* Constants.swift */; };
 		CF841B6F25E1617600604CA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF841B6D25E1617600604CA2 /* Constants.swift */; };
 		CF841B7325E163CA00604CA2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF841B7225E163CA00604CA2 /* OnboardingView.swift */; };
+		CF841B9525E1810D00604CA2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF841B7225E163CA00604CA2 /* OnboardingView.swift */; };
+		CF841B9825E1811100604CA2 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF841B6825E1601200604CA2 /* OnboardingItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,6 +159,7 @@
 				7CC8B9FE25DE04BE00F6F2D0 /* Models */,
 				7CC8B9EC25DE033000F6F2D0 /* Network */,
 				7CC8B9C525DDFF2300F6F2D0 /* TimezoneConverterApp.swift */,
+				CF841BA525E1821B00604CA2 /* Views */,
 				7CC8B9C625DDFF2300F6F2D0 /* ContentView.swift */,
 				7CC8B9C725DDFF2300F6F2D0 /* Assets.xcassets */,
 			);
@@ -175,8 +178,6 @@
 		7CC8B9CE25DDFF2300F6F2D0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CF841B6825E1601200604CA2 /* OnboardingItem.swift */,
-				CF841B7225E163CA00604CA2 /* OnboardingView.swift */,
 				7CC8B9CF25DDFF2300F6F2D0 /* Info.plist */,
 			);
 			path = iOS;
@@ -228,6 +229,21 @@
 				F94DC1EB25E181C40035CB35 /* LocationSearchService.swift */,
 			);
 			path = Location;
+		CF841B9D25E181EA00604CA2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CF841B7225E163CA00604CA2 /* OnboardingView.swift */,
+				CF841B6825E1601200604CA2 /* OnboardingItem.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CF841BA525E1821B00604CA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF841B9D25E181EA00604CA2 /* Onboarding */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +379,7 @@
 				7CC8BA0125DE04CC00F6F2D0 /* TimezoneModel.swift in Sources */,
 				7C21B37925E1DAEA00DD60FA /* CustomUserDefault.swift in Sources */,
 				7CC8BA0725DE052400F6F2D0 /* RunloopExtension.swift in Sources */,
+				CF841B9825E1811100604CA2 /* OnboardingItem.swift in Sources */,
 				7CC8B9DB25DDFF2400F6F2D0 /* ContentView.swift in Sources */,
 				7C7BA18025DF4E9B00CAA13B /* MainTabBarItems.swift in Sources */,
 				7C21B34E25E16AE600DD60FA /* HomeTabBarViewModel.swift in Sources */,
@@ -370,6 +387,7 @@
 				F94DC1CF25E050570035CB35 /* Location.swift in Sources */,
 				7C7BA17A25DF4E3200CAA13B /* MainTabBarView.swift in Sources */,
 				7C7BA18525DF4FF300CAA13B /* CurrentLocationView.swift in Sources */,
+				CF841B9525E1810D00604CA2 /* OnboardingView.swift in Sources */,
 				CF841B6F25E1617600604CA2 /* Constants.swift in Sources */,
 				7CC8B9F625DE035E00F6F2D0 /* NetworkError.swift in Sources */,
 				7CC8B9EF25DE034000F6F2D0 /* NetworkService.swift in Sources */,
