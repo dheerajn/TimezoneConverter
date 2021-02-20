@@ -35,6 +35,10 @@
 		7CC8BA0725DE052400F6F2D0 /* RunloopExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BA0525DE052400F6F2D0 /* RunloopExtension.swift */; };
 		7CC8BA0B25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BA0A25DE057B00F6F2D0 /* PublisherExtension.swift */; };
 		7CC8BA0C25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BA0A25DE057B00F6F2D0 /* PublisherExtension.swift */; };
+		F94DC1CE25E050570035CB35 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1CD25E050570035CB35 /* Location.swift */; };
+		F94DC1CF25E050570035CB35 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1CD25E050570035CB35 /* Location.swift */; };
+		F94DC1D325E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */; };
+		F94DC1D425E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,8 @@
 		7CC8B9FF25DE04CC00F6F2D0 /* TimezoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneModel.swift; sourceTree = "<group>"; };
 		7CC8BA0525DE052400F6F2D0 /* RunloopExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunloopExtension.swift; sourceTree = "<group>"; };
 		7CC8BA0A25DE057B00F6F2D0 /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
+		F94DC1CD25E050570035CB35 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneConversionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				7CC8B9FF25DE04CC00F6F2D0 /* TimezoneModel.swift */,
+				F94DC1CD25E050570035CB35 /* Location.swift */,
+				F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = SwiftUIJam;
 				TargetAttributes = {
 					7CC8B9CB25DDFF2300F6F2D0 = {
@@ -278,12 +286,14 @@
 				7CC8B9DA25DDFF2400F6F2D0 /* ContentView.swift in Sources */,
 				7C7BA17F25DF4E9B00CAA13B /* MainTabBarItems.swift in Sources */,
 				7CC8B9F525DE035E00F6F2D0 /* NetworkError.swift in Sources */,
+				F94DC1CE25E050570035CB35 /* Location.swift in Sources */,
 				7C7BA17925DF4E3200CAA13B /* MainTabBarView.swift in Sources */,
 				7C7BA18425DF4FF300CAA13B /* CurrentLocationView.swift in Sources */,
 				7CC8B9EE25DE034000F6F2D0 /* NetworkService.swift in Sources */,
 				7CC8B9D825DDFF2400F6F2D0 /* TimezoneConverterApp.swift in Sources */,
 				7CC8BA0B25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */,
 				7CC8B9FA25DE041100F6F2D0 /* NetworkCalls.swift in Sources */,
+				F94DC1D325E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */,
 				7C7BA18925DF531000CAA13B /* HomeTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,12 +308,14 @@
 				7CC8B9DB25DDFF2400F6F2D0 /* ContentView.swift in Sources */,
 				7C7BA18025DF4E9B00CAA13B /* MainTabBarItems.swift in Sources */,
 				7CC8B9F625DE035E00F6F2D0 /* NetworkError.swift in Sources */,
+				F94DC1CF25E050570035CB35 /* Location.swift in Sources */,
 				7C7BA17A25DF4E3200CAA13B /* MainTabBarView.swift in Sources */,
 				7C7BA18525DF4FF300CAA13B /* CurrentLocationView.swift in Sources */,
 				7CC8B9EF25DE034000F6F2D0 /* NetworkService.swift in Sources */,
 				7CC8B9D925DDFF2400F6F2D0 /* TimezoneConverterApp.swift in Sources */,
 				7CC8BA0C25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */,
 				7CC8B9FB25DE041100F6F2D0 /* NetworkCalls.swift in Sources */,
+				F94DC1D425E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */,
 				7C7BA18A25DF531000CAA13B /* HomeTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -448,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -471,6 +485,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -493,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
