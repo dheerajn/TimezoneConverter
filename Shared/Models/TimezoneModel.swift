@@ -10,15 +10,15 @@ import Foundation
 
 struct TimezoneModel: Codable {
     
-    let dateTime: String
-    let timezoneName: String
+    let dateTime: String?
+    let timezoneName: String?
     let timezoneLocation: String?
-    let timezoneAbbreviation: String
-    let gmtOffset: Float
-    let isDst: Bool
-    let requestedLocation: String
-    let latitude: Float
-    let longitude: Float
+    let timezoneAbbreviation: String?
+    let gmtOffset: Float?
+    let isDst: Bool?
+    let requestedLocation: String?
+    let latitude: Float?
+    let longitude: Float?
     
     enum CodingKeys: String, CodingKey {
         case dateTime = "datetime"
