@@ -10,6 +10,7 @@ import SwiftUI
 
 struct HomeTabBarView: View {
     @State var searchText: String = ""
+    @ObservedObject var viewModel = HomeTabBarViewModel()
     
     var body: some View {
         NavigationView {
