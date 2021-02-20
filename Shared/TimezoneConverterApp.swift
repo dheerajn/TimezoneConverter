@@ -11,7 +11,11 @@ import SwiftUI
 struct TimezoneConverterApp: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            #if os(iOS)
+                OnboardingView()
+            #elseif os(macOS)
+                ContentView()
+            #endif
         }
     }
 }
