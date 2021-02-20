@@ -9,14 +9,26 @@
 import Foundation
 
 struct TimezoneModel: Codable {
-    let datetime: String
-    let timezone_name: String
-    let timezone_location: String?
-    let timezone_abbreviation: String
-    let gmt_offset: Int
-    let is_dst: Bool
-    let requested_location: String
+    
+    let dateTime: String
+    let timezoneName: String
+    let timezoneLocation: String?
+    let timezoneAbbreviation: String
+    let gmtOffset: Float
+    let isDst: Bool
+    let requestedLocation: String
     let latitude: Float
     let longitude: Float
     
+    enum CodingKeys: String, CodingKey {
+        case dateTime = "datetime"
+        case timezoneName = "timezone_name"
+        case timezoneLocation = "timezone_location"
+        case timezoneAbbreviation = "timezone_abbreviation"
+        case gmtOffset = "gmt_offset"
+        case isDst = "is_dst"
+        case requestedLocation = "requested_location"
+        case latitude
+        case longitude
+    }
 }

@@ -17,8 +17,10 @@ struct MainTabBarView: View {
         UITabBar.appearance().clipsToBounds = true
         
         // Uncomment to testing network service and TimeZone model only
+        
+        // Test for getTimeZones()
 //        let networkService = NetworkService(urlString: "test")
-//        let losAngeles = Location(city: "Mumbai", nation: "India")
+//        let losAngeles = Location(city: "Los Angeles", nation: "United States")
 //        let publisher = networkService.getTimezones(location: losAngeles)
 //        let result = publisher.sink { (completion) in
 //            print("completion: \(completion)")
@@ -35,6 +37,27 @@ struct MainTabBarView: View {
 //            }
 //        }
         
+        // Test for convertTimezones()
+//        let networkService = NetworkService(urlString: "test")
+//        let losAngeles = Location(city: "Los Angeles", nation: "United States")
+//        let mumbai = Location(city: "Mumbai", nation: "India")
+//        let dateTime = Date()
+//        let publisher = networkService.convertTimezones(baseLocation: losAngeles, baseDatetime: dateTime, targetLocation: mumbai)
+//        let result = publisher.sink { (completion) in
+//            print("completion: \(completion)")
+//        } receiveValue: { (result) in
+//            switch result {
+//            case .success(let model):
+//                print("model: \(model)")
+//            case .failure(let error):
+//                print("error: \(error.localizedDescription)")
+//                print(error.message)
+//                print(error.status)
+//                print(error.uiErrorKey)
+//                print(error.isTokenValid)
+//            }
+//        }
+
         
 
 

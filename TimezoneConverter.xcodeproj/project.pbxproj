@@ -37,6 +37,8 @@
 		7CC8BA0C25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BA0A25DE057B00F6F2D0 /* PublisherExtension.swift */; };
 		F94DC1CE25E050570035CB35 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1CD25E050570035CB35 /* Location.swift */; };
 		F94DC1CF25E050570035CB35 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1CD25E050570035CB35 /* Location.swift */; };
+		F94DC1D325E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */; };
+		F94DC1D425E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,7 @@
 		7CC8BA0525DE052400F6F2D0 /* RunloopExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunloopExtension.swift; sourceTree = "<group>"; };
 		7CC8BA0A25DE057B00F6F2D0 /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 		F94DC1CD25E050570035CB35 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneConversionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,7 @@
 			children = (
 				7CC8B9FF25DE04CC00F6F2D0 /* TimezoneModel.swift */,
 				F94DC1CD25E050570035CB35 /* Location.swift */,
+				F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,6 +293,7 @@
 				7CC8B9D825DDFF2400F6F2D0 /* TimezoneConverterApp.swift in Sources */,
 				7CC8BA0B25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */,
 				7CC8B9FA25DE041100F6F2D0 /* NetworkCalls.swift in Sources */,
+				F94DC1D325E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */,
 				7C7BA18925DF531000CAA13B /* HomeTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +315,7 @@
 				7CC8B9D925DDFF2400F6F2D0 /* TimezoneConverterApp.swift in Sources */,
 				7CC8BA0C25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */,
 				7CC8B9FB25DE041100F6F2D0 /* NetworkCalls.swift in Sources */,
+				F94DC1D425E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */,
 				7C7BA18A25DF531000CAA13B /* HomeTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
