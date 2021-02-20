@@ -17,8 +17,6 @@
 		7C7BA18525DF4FF300CAA13B /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BA18325DF4FF300CAA13B /* CurrentLocationView.swift */; };
 		7C7BA18925DF531000CAA13B /* HomeTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BA18825DF531000CAA13B /* HomeTabBarView.swift */; };
 		7C7BA18A25DF531000CAA13B /* HomeTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BA18825DF531000CAA13B /* HomeTabBarView.swift */; };
-		7C7BA19225DF540A00CAA13B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BA19125DF540A00CAA13B /* SearchBar.swift */; };
-		7C7BA19325DF540A00CAA13B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BA19125DF540A00CAA13B /* SearchBar.swift */; };
 		7CC8B9D825DDFF2400F6F2D0 /* TimezoneConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8B9C525DDFF2300F6F2D0 /* TimezoneConverterApp.swift */; };
 		7CC8B9D925DDFF2400F6F2D0 /* TimezoneConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8B9C525DDFF2300F6F2D0 /* TimezoneConverterApp.swift */; };
 		7CC8B9DA25DDFF2400F6F2D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8B9C625DDFF2300F6F2D0 /* ContentView.swift */; };
@@ -41,6 +39,10 @@
 		F94DC1CF25E050570035CB35 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1CD25E050570035CB35 /* Location.swift */; };
 		F94DC1D325E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */; };
 		F94DC1D425E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */; };
+		F94DC1EC25E181C50035CB35 /* LocationSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1EB25E181C40035CB35 /* LocationSearchService.swift */; };
+		F94DC1F625E1887B0035CB35 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1F525E1887B0035CB35 /* SearchBarView.swift */; };
+		F94DC1FA25E189400035CB35 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1F925E189400035CB35 /* Address.swift */; };
+		F94DC20225E18CAB0035CB35 /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC20125E18CAB0035CB35 /* LocationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +51,6 @@
 		7C7BA17E25DF4E9B00CAA13B /* MainTabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarItems.swift; sourceTree = "<group>"; };
 		7C7BA18325DF4FF300CAA13B /* CurrentLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
 		7C7BA18825DF531000CAA13B /* HomeTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarView.swift; sourceTree = "<group>"; };
-		7C7BA19125DF540A00CAA13B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		7CC8B9C525DDFF2300F6F2D0 /* TimezoneConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneConverterApp.swift; sourceTree = "<group>"; };
 		7CC8B9C625DDFF2300F6F2D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CC8B9C725DDFF2300F6F2D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +67,10 @@
 		7CC8BA0A25DE057B00F6F2D0 /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 		F94DC1CD25E050570035CB35 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneConversionModel.swift; sourceTree = "<group>"; };
+		F94DC1EB25E181C40035CB35 /* LocationSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchService.swift; sourceTree = "<group>"; };
+		F94DC1F525E1887B0035CB35 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		F94DC1F925E189400035CB35 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		F94DC20125E18CAB0035CB35 /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +113,7 @@
 			children = (
 				7C21B34B25E16AD500DD60FA /* ViewModel */,
 				7C7BA18825DF531000CAA13B /* HomeTabBarView.swift */,
-				7C7BA19125DF540A00CAA13B /* SearchBar.swift */,
+				F94DC1F525E1887B0035CB35 /* SearchBarView.swift */,
 				7C7BA18325DF4FF300CAA13B /* CurrentLocationView.swift */,
 			);
 			path = HomeTabBar;
@@ -127,6 +132,7 @@
 		7CC8B9C425DDFF2300F6F2D0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F94DC1EA25E181A30035CB35 /* Location */,
 				7C7BA18E25DF538200CAA13B /* HomeTabBar */,
 				7C7BA17D25DF4E6500CAA13B /* Helper */,
 				7CC8BA0425DE051600F6F2D0 /* Extenions */,
@@ -181,6 +187,7 @@
 				7CC8B9FF25DE04CC00F6F2D0 /* TimezoneModel.swift */,
 				F94DC1CD25E050570035CB35 /* Location.swift */,
 				F94DC1D225E07DB70035CB35 /* TimezoneConversionModel.swift */,
+				F94DC1F925E189400035CB35 /* Address.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +199,15 @@
 				7CC8BA0A25DE057B00F6F2D0 /* PublisherExtension.swift */,
 			);
 			path = Extenions;
+			sourceTree = "<group>";
+		};
+		F94DC1EA25E181A30035CB35 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				F94DC20125E18CAB0035CB35 /* LocationError.swift */,
+				F94DC1EB25E181C40035CB35 /* LocationSearchService.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,13 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C7BA19225DF540A00CAA13B /* SearchBar.swift in Sources */,
+				F94DC1FA25E189400035CB35 /* Address.swift in Sources */,
 				7CC8BA0025DE04CC00F6F2D0 /* TimezoneModel.swift in Sources */,
 				7CC8BA0625DE052400F6F2D0 /* RunloopExtension.swift in Sources */,
 				7CC8B9DA25DDFF2400F6F2D0 /* ContentView.swift in Sources */,
 				7C7BA17F25DF4E9B00CAA13B /* MainTabBarItems.swift in Sources */,
 				7C21B34D25E16AE600DD60FA /* HomeTabBarViewModel.swift in Sources */,
 				7CC8B9F525DE035E00F6F2D0 /* NetworkError.swift in Sources */,
+				F94DC20225E18CAB0035CB35 /* LocationError.swift in Sources */,
+				F94DC1EC25E181C50035CB35 /* LocationSearchService.swift in Sources */,
 				F94DC1CE25E050570035CB35 /* Location.swift in Sources */,
 				7C7BA17925DF4E3200CAA13B /* MainTabBarView.swift in Sources */,
 				7C7BA18425DF4FF300CAA13B /* CurrentLocationView.swift in Sources */,
@@ -307,6 +325,7 @@
 				7CC8BA0B25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */,
 				7CC8B9FA25DE041100F6F2D0 /* NetworkCalls.swift in Sources */,
 				F94DC1D325E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */,
+				F94DC1F625E1887B0035CB35 /* SearchBarView.swift in Sources */,
 				7C7BA18925DF531000CAA13B /* HomeTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C7BA19325DF540A00CAA13B /* SearchBar.swift in Sources */,
 				7CC8BA0125DE04CC00F6F2D0 /* TimezoneModel.swift in Sources */,
 				7CC8BA0725DE052400F6F2D0 /* RunloopExtension.swift in Sources */,
 				7CC8B9DB25DDFF2400F6F2D0 /* ContentView.swift in Sources */,

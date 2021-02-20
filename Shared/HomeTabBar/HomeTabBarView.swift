@@ -11,12 +11,14 @@ import SwiftUI
 struct HomeTabBarView: View {
     @State var searchText: String = ""
     @ObservedObject var viewModel = HomeTabBarViewModel()
+    @ObservedObject var locationSearchService = LocationSearchService()
     
     var body: some View {
         NavigationView {
             VStack {
-                SearchBar(text: $searchText)
                 
+                SearchBarView(text: $locationSearchService.searchQuery)
+                    
                 CurrentLocationView()
                     .frame(height: 200)
                     .cornerRadius(20)
