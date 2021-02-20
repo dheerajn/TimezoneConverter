@@ -30,6 +30,9 @@ struct SearchBarView: UIViewRepresentable {
     
     func makeUIView(context: UIViewRepresentableContext<SearchBarView>) -> UISearchBar {
         let searchBar = UISearchBar(frame: .zero)
+        if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
+            textfield.backgroundColor = UIColor(red: 196.0/255.0, green: 196.0/255.0, blue: 196.0/255.0, alpha: 0.7)
+        }
         searchBar.delegate = context.coordinator
         searchBar.searchBarStyle = .minimal
         return searchBar
