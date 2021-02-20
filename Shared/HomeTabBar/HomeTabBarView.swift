@@ -15,6 +15,8 @@ struct HomeTabBarView: View {
     var body: some View {
         NavigationView {
             VStack {
+                // Uncomment LocationTestView and comment SearchBar for testing of location search
+//                LocationTestView()
                 SearchBar(text: $searchText)
                 
                 CurrentLocationView()

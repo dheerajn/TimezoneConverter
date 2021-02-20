@@ -9,7 +9,9 @@
 import Foundation
 import MapKit
 
-struct Address {
+struct Address: Identifiable {
+    var id = UUID()
+    
     let street: String
     let locale: String
     

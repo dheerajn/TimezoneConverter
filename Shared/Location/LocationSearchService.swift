@@ -10,7 +10,7 @@ import SwiftUI
 import MapKit
 import Combine
 
-fileprivate final class LocationSearchService: NSObject, ObservableObject, MKLocalSearchCompleterDelegate {
+final class LocationSearchService: NSObject, ObservableObject, MKLocalSearchCompleterDelegate {
     
     @Published var searchQuery = ""
     @Published var addresses: [Address] = []

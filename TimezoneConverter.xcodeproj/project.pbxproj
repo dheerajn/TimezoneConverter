@@ -45,6 +45,8 @@
 		F94DC1F625E1887B0035CB35 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1F525E1887B0035CB35 /* SearchBarView.swift */; };
 		F94DC1FA25E189400035CB35 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC1F925E189400035CB35 /* Address.swift */; };
 		F94DC20225E18CAB0035CB35 /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC20125E18CAB0035CB35 /* LocationError.swift */; };
+		F94DC20625E195D90035CB35 /* LocationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC20525E195D90035CB35 /* LocationTestView.swift */; };
+		F94DC20A25E197090035CB35 /* SearchResultTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DC20925E197090035CB35 /* SearchResultTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		F94DC1F525E1887B0035CB35 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F94DC1F925E189400035CB35 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		F94DC20125E18CAB0035CB35 /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
+		F94DC20525E195D90035CB35 /* LocationTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTestView.swift; sourceTree = "<group>"; };
+		F94DC20925E197090035CB35 /* SearchResultTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,9 +211,11 @@
 		F94DC1EA25E181A30035CB35 /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				F94DC20125E18CAB0035CB35 /* LocationError.swift */,
 				F94DC1EB25E181C40035CB35 /* LocationSearchService.swift */,
 				F94DC1F525E1887B0035CB35 /* SearchBarView.swift */,
-				F94DC20125E18CAB0035CB35 /* LocationError.swift */,
+				F94DC20525E195D90035CB35 /* LocationTestView.swift */,
+				F94DC20925E197090035CB35 /* SearchResultTestView.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -313,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94DC1FA25E189400035CB35 /* Address.swift in Sources */,
+				F94DC20A25E197090035CB35 /* SearchResultTestView.swift in Sources */,
+				F94DC20625E195D90035CB35 /* LocationTestView.swift in Sources */,
 				7C7BA19225DF540A00CAA13B /* SearchBar.swift in Sources */,
 				7CC8BA0025DE04CC00F6F2D0 /* TimezoneModel.swift in Sources */,
 				7CC8BA0625DE052400F6F2D0 /* RunloopExtension.swift in Sources */,
