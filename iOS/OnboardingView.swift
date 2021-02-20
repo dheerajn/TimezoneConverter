@@ -26,6 +26,8 @@ struct OnboardingView: View {
                     subheadline: Constants.Onboarding.ItemThree.subheadline)
                     .padding(.horizontal, 20)
             }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             Button(action: {
                 print("Button Tapped")
             }) {
