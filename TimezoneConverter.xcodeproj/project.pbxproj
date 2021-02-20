@@ -36,6 +36,8 @@
 		CF841B7325E163CA00604CA2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF841B7225E163CA00604CA2 /* OnboardingView.swift */; };
 		CF841B9525E1810D00604CA2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF841B7225E163CA00604CA2 /* OnboardingView.swift */; };
 		CF841B9825E1811100604CA2 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF841B6825E1601200604CA2 /* OnboardingItem.swift */; };
+		CFC410E225E1838600BA5AF7 /* AskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC410E125E1838600BA5AF7 /* AskView.swift */; };
+		CFC410E325E1838600BA5AF7 /* AskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC410E125E1838600BA5AF7 /* AskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,7 @@
 		CF841B6825E1601200604CA2 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		CF841B6D25E1617600604CA2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CF841B7225E163CA00604CA2 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CFC410E125E1838600BA5AF7 /* AskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				CF841B9D25E181EA00604CA2 /* Onboarding */,
+				CFC410E125E1838600BA5AF7 /* AskView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,6 +314,7 @@
 				CF841B6925E1601200604CA2 /* OnboardingItem.swift in Sources */,
 				CF841B7325E163CA00604CA2 /* OnboardingView.swift in Sources */,
 				7CC8B9FA25DE041100F6F2D0 /* NetworkCalls.swift in Sources */,
+				CFC410E225E1838600BA5AF7 /* AskView.swift in Sources */,
 				7C7BA18925DF531000CAA13B /* HomeTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +329,7 @@
 				7CC8B9DB25DDFF2400F6F2D0 /* ContentView.swift in Sources */,
 				CF841B9525E1810D00604CA2 /* OnboardingView.swift in Sources */,
 				CF841B6F25E1617600604CA2 /* Constants.swift in Sources */,
+				CFC410E325E1838600BA5AF7 /* AskView.swift in Sources */,
 				7CC8B9F625DE035E00F6F2D0 /* NetworkError.swift in Sources */,
 				7CC8B9EF25DE034000F6F2D0 /* NetworkService.swift in Sources */,
 				7CC8B9D925DDFF2400F6F2D0 /* TimezoneConverterApp.swift in Sources */,
