@@ -54,15 +54,19 @@ extension NetworkCalls {
         
         let parameters: [String: Any]? = nil
         
-        var timezoneUrlString = URLComponents(string: "https://timezone.abstractapi.com/v1/current_time")!
+        var timezoneUrl = URLComponents(string: "https://timezone.abstractapi.com/v1/current_time")
 
-        timezoneUrlString.queryItems = [
+        timezoneUrl?.queryItems = [
             URLQueryItem(name: "api_key", value: "529f043d73d444649caa77483b0bfd52"),
             URLQueryItem(name: "location", value: location.description())
         ]
         
+        guard timezoneUrl != nil, let timezoneUrlString = timezoneUrl?.string else {
+            return .just(.failure(StandardError(message: "Invalid URL", isTokenValid: false)))
+        }
         
-        return NetworkService(urlString: timezoneUrlString.string!, httpMethod: .get, parameters: parameters).load()
+        
+        return NetworkService(urlString: timezoneUrlString, httpMethod: .get, parameters: parameters).load()
             .map { (result: Result<TimezoneModel, NetworkError>) -> TimezoneResult in
                 switch result {
                 case .success(let value):
@@ -89,21 +93,25 @@ extension NetworkCalls {
     func convertTimezones(baseLocation: Location, baseDatetime: Date, targetLocation: Location) -> AnyPublisher<TimezoneConversionResult, Never> {
         let parameters: [String: Any]? = nil
         
-        var timezoneUrlString = URLComponents(string: "https://timezone.abstractapi.com/v1/convert_time")!
+        var timezoneUrl = URLComponents(string: "https://timezone.abstractapi.com/v1/convert_time")
         
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.dateFormat = "yyyy-MM-dd-HH:mm:ss"
 
-        timezoneUrlString.queryItems = [
+        timezoneUrl?.queryItems = [
             URLQueryItem(name: "api_key", value: "529f043d73d444649caa77483b0bfd52"),
             URLQueryItem(name: "base_location", value: baseLocation.description()),
             URLQueryItem(name: "base_datetime", value: formatter.string(from: baseDatetime)),
             URLQueryItem(name: "target_location", value: targetLocation.description())
         ]
         
+        guard timezoneUrl != nil, let timezoneUrlString = timezoneUrl?.string else {
+            return .just(.failure(StandardError(message: "Invalid URL", isTokenValid: false)))
+        }
         
-        return NetworkService(urlString: timezoneUrlString.string!, httpMethod: .get, parameters: parameters).load()
+        
+        return NetworkService(urlString: timezoneUrlString, httpMethod: .get, parameters: parameters).load()
             .map { (result: Result<TimezoneConversionModel, NetworkError>) -> TimezoneConversionResult in
                 switch result {
                 case .success(let value):
