@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
+    @State private var isAskViewEnabled = false
+    
     var body: some View {
         VStack {
             TabView {
@@ -29,16 +32,19 @@ struct OnboardingView: View {
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             Button(action: {
-                print("Button Tapped")
+                isAskViewEnabled.toggle()
             }) {
                 Text("Continue")
                     .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 51)
                     .font(.system(size: 16, weight: .medium, design: .rounded))
-                    .foregroundColor(.primary)
+                    .foregroundColor(.black)
             }
             .background(Color.yellow)
             .cornerRadius(13)
             .padding(.horizontal, 33)
+            .sheet(isPresented: $isAskViewEnabled) {
+                AskView()
+            }
         }
     }
 }
