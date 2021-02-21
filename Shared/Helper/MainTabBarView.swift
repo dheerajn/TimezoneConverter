@@ -10,7 +10,8 @@ import SwiftUI
 
 struct MainTabBarView: View {
     @State var selectTabBar = 0
-    
+    @EnvironmentObject var viewRouter: ViewRouter
+
     init() {
         UITabBar.appearance().barTintColor = UIColor.black.withAlphaComponent(0.6)
         UITabBar.appearance().alpha = 1.0
@@ -19,14 +20,8 @@ struct MainTabBarView: View {
     
     var body: some View {
         TabView(selection: $selectTabBar) {
-            HomeTabBarView()
-                .tabItem {
-                    Image(systemName: MainTabBarViewItems.home.imageName)
-                    Text(MainTabBarViewItems.home.title)
-                }
-                .tag(MainTabBarViewItems.home.rawValue)
             
-            ContentView()
+            HomeView()
                 .tabItem {
                     Image(systemName: MainTabBarViewItems.friends.imageName)
                     Text(MainTabBarViewItems.friends.title)
@@ -39,13 +34,7 @@ struct MainTabBarView: View {
                     Text(MainTabBarViewItems.notifications.title)
                 }
                 .tag(MainTabBarViewItems.notifications.rawValue)
-            
-            ContentView()
-                .tabItem {
-                    Image(systemName: MainTabBarViewItems.profile.imageName)
-                    Text(MainTabBarViewItems.profile.title)
-                }
-                .tag(MainTabBarViewItems.profile.rawValue)
+
         }
         .accentColor(Color.white)
     }

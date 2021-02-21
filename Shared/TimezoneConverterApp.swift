@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TimezoneConverterApp: App {
+    @StateObject var user = User()
+    
     var body: some Scene {
         WindowGroup {
-            MainTabBarView()
+            BaseView()
+                .environmentObject(ViewRouter())
+                .environmentObject(user)
         }
     }
 }

@@ -9,17 +9,40 @@
 import SwiftUI
 
 struct HomeTabBarView: View {
-    @State var searchText: String = ""
+    @ObservedObject var viewModel = HomeTabBarViewModel()
+    @ObservedObject var locationSearchService = LocationSearchService()
+    @State private var searchBarIsActive = false
     
     var body: some View {
         NavigationView {
             VStack {
-                SearchBar(text: $searchText)
                 
-                CurrentLocationView()
-                    .frame(height: 200)
-                    .cornerRadius(20)
-                    .padding()
+                SearchBarView(text: $locationSearchService.searchQuery, isActive: $searchBarIsActive)
+                    .accentColor(.blue)
+                
+                
+                if searchBarIsActive {
+                    List(locationSearchService.addresses) { address in
+                        VStack(alignment: .leading) {
+                            Text(address.street)
+                            Text(address.locale)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                        .onTapGesture {
+                            // store chosen location
+                            
+                        }
+                    }
+                }
+                
+                if !searchBarIsActive {
+                    CurrentLocationView()
+                        .frame(height: 200)
+                        .cornerRadius(20)
+                        .padding()
+                }
+                
             }
             .navigationTitle("Home")
         }
