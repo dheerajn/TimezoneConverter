@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		7C21B34D25E16AE600DD60FA /* HomeTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21B34C25E16AE600DD60FA /* HomeTabBarViewModel.swift */; };
 		7C21B34E25E16AE600DD60FA /* HomeTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21B34C25E16AE600DD60FA /* HomeTabBarViewModel.swift */; };
+		7C21B37425E1DAEA00DD60FA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21B37125E1DAEA00DD60FA /* BaseView.swift */; };
+		7C21B37525E1DAEA00DD60FA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21B37125E1DAEA00DD60FA /* BaseView.swift */; };
+		7C21B37625E1DAEA00DD60FA /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21B37225E1DAEA00DD60FA /* ViewRouter.swift */; };
+		7C21B37725E1DAEA00DD60FA /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21B37225E1DAEA00DD60FA /* ViewRouter.swift */; };
+		7C21B37825E1DAEA00DD60FA /* CustomUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21B37325E1DAEA00DD60FA /* CustomUserDefault.swift */; };
+		7C21B37925E1DAEA00DD60FA /* CustomUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21B37325E1DAEA00DD60FA /* CustomUserDefault.swift */; };
 		7C7BA17925DF4E3200CAA13B /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BA17825DF4E3200CAA13B /* MainTabBarView.swift */; };
 		7C7BA17A25DF4E3200CAA13B /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BA17825DF4E3200CAA13B /* MainTabBarView.swift */; };
 		7C7BA17F25DF4E9B00CAA13B /* MainTabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BA17E25DF4E9B00CAA13B /* MainTabBarItems.swift */; };
@@ -47,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		7C21B34C25E16AE600DD60FA /* HomeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewModel.swift; sourceTree = "<group>"; };
+		7C21B37125E1DAEA00DD60FA /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		7C21B37225E1DAEA00DD60FA /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		7C21B37325E1DAEA00DD60FA /* CustomUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUserDefault.swift; sourceTree = "<group>"; };
 		7C7BA17825DF4E3200CAA13B /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		7C7BA17E25DF4E9B00CAA13B /* MainTabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarItems.swift; sourceTree = "<group>"; };
 		7C7BA18325DF4FF300CAA13B /* CurrentLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
@@ -102,6 +111,9 @@
 		7C7BA17D25DF4E6500CAA13B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7C21B37125E1DAEA00DD60FA /* BaseView.swift */,
+				7C21B37325E1DAEA00DD60FA /* CustomUserDefault.swift */,
+				7C21B37225E1DAEA00DD60FA /* ViewRouter.swift */,
 				7C7BA17825DF4E3200CAA13B /* MainTabBarView.swift */,
 				7C7BA17E25DF4E9B00CAA13B /* MainTabBarItems.swift */,
 			);
@@ -315,6 +327,7 @@
 				7C7BA17F25DF4E9B00CAA13B /* MainTabBarItems.swift in Sources */,
 				7C21B34D25E16AE600DD60FA /* HomeTabBarViewModel.swift in Sources */,
 				7CC8B9F525DE035E00F6F2D0 /* NetworkError.swift in Sources */,
+				7C21B37425E1DAEA00DD60FA /* BaseView.swift in Sources */,
 				F94DC20225E18CAB0035CB35 /* LocationError.swift in Sources */,
 				F94DC1EC25E181C50035CB35 /* LocationSearchService.swift in Sources */,
 				F94DC1CE25E050570035CB35 /* Location.swift in Sources */,
@@ -322,6 +335,8 @@
 				7C7BA18425DF4FF300CAA13B /* CurrentLocationView.swift in Sources */,
 				7CC8B9EE25DE034000F6F2D0 /* NetworkService.swift in Sources */,
 				7CC8B9D825DDFF2400F6F2D0 /* TimezoneConverterApp.swift in Sources */,
+				7C21B37825E1DAEA00DD60FA /* CustomUserDefault.swift in Sources */,
+				7C21B37625E1DAEA00DD60FA /* ViewRouter.swift in Sources */,
 				7CC8BA0B25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */,
 				7CC8B9FA25DE041100F6F2D0 /* NetworkCalls.swift in Sources */,
 				F94DC1D325E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */,
@@ -335,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CC8BA0125DE04CC00F6F2D0 /* TimezoneModel.swift in Sources */,
+				7C21B37925E1DAEA00DD60FA /* CustomUserDefault.swift in Sources */,
 				7CC8BA0725DE052400F6F2D0 /* RunloopExtension.swift in Sources */,
 				7CC8B9DB25DDFF2400F6F2D0 /* ContentView.swift in Sources */,
 				7C7BA18025DF4E9B00CAA13B /* MainTabBarItems.swift in Sources */,
@@ -347,8 +363,10 @@
 				7CC8B9D925DDFF2400F6F2D0 /* TimezoneConverterApp.swift in Sources */,
 				7CC8BA0C25DE057B00F6F2D0 /* PublisherExtension.swift in Sources */,
 				7CC8B9FB25DE041100F6F2D0 /* NetworkCalls.swift in Sources */,
+				7C21B37725E1DAEA00DD60FA /* ViewRouter.swift in Sources */,
 				F94DC1D425E07DB70035CB35 /* TimezoneConversionModel.swift in Sources */,
 				7C7BA18A25DF531000CAA13B /* HomeTabBarView.swift in Sources */,
+				7C21B37525E1DAEA00DD60FA /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
