@@ -12,8 +12,10 @@ struct AskView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var user: User
 
     @State private var cityString = ""
+    @State private var presentsDetail = false // pass to search and search results view.  Once search result is selected, binding is set to false and navigationview will pop back to root view
     
     init() {
         let appearance = UINavigationBarAppearance()
@@ -37,10 +39,24 @@ struct AskView: View {
                     .frame(height: 189)
                 Spacer()
                     .frame(height: 61)
-                TextField("Enter your city here", text: $cityString)
-                    .font(.system(.body, design: .rounded))
-                    .textFieldStyle(RoundedRectangleTextFieldStyle())
-                    .padding([.leading, .trailing], 33)
+                
+                NavigationLink(
+                    destination: SearchResultView(presentsDetail: $presentsDetail),
+                    isActive: $presentsDetail,
+                    label: {
+                        TextField("Enter your city here", text: $cityString)
+                            .font(.system(.body, design: .rounded))
+                            .textFieldStyle(RoundedRectangleTextFieldStyle())
+                            .padding([.leading, .trailing], 33)
+                            .onChange(of: user.chosenLocation, perform: { location in
+                                if let location = location{
+                                    cityString = location.description()
+                                }
+                            })
+                    }
+                )
+                .isDetailLink(presentsDetail)
+                
                 Spacer()
                 Button(action: {
                     CustomUserDefault.setOnboardingViewShown(value: true)
