@@ -11,7 +11,8 @@ import SwiftUI
 struct OnboardingView: View {
     
     @State private var isAskViewEnabled = false
-    
+    @EnvironmentObject var viewRouter: ViewRouter
+
     var body: some View {
         VStack {
             TabView {
@@ -43,7 +44,7 @@ struct OnboardingView: View {
             .cornerRadius(13)
             .padding(.horizontal, 33)
             .sheet(isPresented: $isAskViewEnabled) {
-                AskView()
+                AskView().environmentObject(viewRouter)
             }
         }
     }

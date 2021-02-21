@@ -16,7 +16,7 @@ struct BaseView : View {
         VStack {
             if viewRouter.currentPage == .onboarding {
                 //TODO: change this once Raj's changes are merged
-                ContentView().environmentObject(viewRouter)
+                OnboardingView().environmentObject(viewRouter)
                     .transition(.scale)
                 
             } else if viewRouter.currentPage == .home {

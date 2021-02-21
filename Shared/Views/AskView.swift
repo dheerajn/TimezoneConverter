@@ -11,7 +11,8 @@ import SwiftUI
 struct AskView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    
+    @EnvironmentObject var viewRouter: ViewRouter
+
     @State private var cityString = ""
     
     init() {
@@ -42,7 +43,8 @@ struct AskView: View {
                     .padding([.leading, .trailing], 33)
                 Spacer()
                 Button(action: {
-                    print("Navigated")
+                    CustomUserDefault.setOnboardingViewShown(value: true)
+                    viewRouter.currentPage = .home
                 }) {
                     Text("Continue")
                         .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 51)

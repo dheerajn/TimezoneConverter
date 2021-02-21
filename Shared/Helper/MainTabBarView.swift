@@ -20,14 +20,8 @@ struct MainTabBarView: View {
     
     var body: some View {
         TabView(selection: $selectTabBar) {
-            HomeTabBarView()
-                .tabItem {
-                    Image(systemName: MainTabBarViewItems.home.imageName)
-                    Text(MainTabBarViewItems.home.title)
-                }
-                .tag(MainTabBarViewItems.home.rawValue)
             
-            ContentView()
+            HomeView()
                 .tabItem {
                     Image(systemName: MainTabBarViewItems.friends.imageName)
                     Text(MainTabBarViewItems.friends.title)
@@ -40,13 +34,7 @@ struct MainTabBarView: View {
                     Text(MainTabBarViewItems.notifications.title)
                 }
                 .tag(MainTabBarViewItems.notifications.rawValue)
-            
-            ContentView()
-                .tabItem {
-                    Image(systemName: MainTabBarViewItems.profile.imageName)
-                    Text(MainTabBarViewItems.profile.title)
-                }
-                .tag(MainTabBarViewItems.profile.rawValue)
+
         }
         .accentColor(Color.white)
     }
