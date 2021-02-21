@@ -12,6 +12,11 @@ struct TimezoneConverterApp: App {
     var body: some Scene {
         WindowGroup {
             BaseView().environmentObject(ViewRouter())
+            #if os(iOS)
+                ContentView()
+            #elseif os(macOS)
+                ContentView()
+            #endif
         }
     }
 }
