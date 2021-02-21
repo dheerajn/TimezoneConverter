@@ -15,7 +15,6 @@ struct SearchResultView: View {
     @Binding var presentsDetail: Bool // set to false to pop back to root of navigation view
     
     var body: some View {
-        NavigationView {
             VStack {
                 SearchBarView(text: $locationSearchService.searchQuery, isActive: $searchBarIsActive)
                     .accentColor(.blue)
@@ -37,7 +36,6 @@ struct SearchResultView: View {
                 }
                 .navigationTitle(Text("Search near me"))
             }
-        }
     }
 }
 

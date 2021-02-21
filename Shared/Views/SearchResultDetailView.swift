@@ -19,34 +19,34 @@ struct SearchResultDetailView: View {
     var address: Address
     
     var body: some View {
-        VStack {
-            if !hasError {
-                List {
-                    ForEach(locations, id: \.self) { location in
-                        VStack {
-                            Button(action: {
-                                // after user choose location, dismiss views and go all the way back to AskView
-                                user.chooseLocation(location)
-                                presentsDetail = false
-                            }, label: {
-                                Text(location.description())
-                            })
+            VStack {
+                if !hasError {
+                    List {
+                        ForEach(locations, id: \.self) { location in
+                            VStack {
+                                Button(action: {
+                                    // after user choose location, dismiss views and go all the way back to AskView
+                                    user.chooseLocation(location)
+                                    presentsDetail = false
+                                }, label: {
+                                    Text(location.description())
+                                })
+                            }
                         }
                     }
+                    .onAppear(perform: {
+                        locationSearchService.getLocations(address: address) { (locations, error) in
+                            if let locations = locations {
+                                self.locations = locations
+                            } else {
+                                hasError = true
+                            }
+                        }
+                    })
+                } else {
+                    Text("Sorry we cannot find any city near you")
                 }
-                .onAppear(perform: {
-                    locationSearchService.getLocations(address: address) { (locations, error) in
-                        if let locations = locations {
-                            self.locations = locations
-                        } else {
-                            hasError = true
-                        }
-                    }
-                })
-            } else {
-                Text("Sorry we cannot find any city near you")
             }
-        }
     }
 }
 
