@@ -12,6 +12,7 @@ struct AskView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var user: User
 
     @State private var cityString = ""
     @State private var presentsDetail = false // pass to search and search results view.  Once search result is selected, binding is set to false and navigationview will pop back to root view
@@ -47,8 +48,14 @@ struct AskView: View {
                             .font(.system(.body, design: .rounded))
                             .textFieldStyle(RoundedRectangleTextFieldStyle())
                             .padding([.leading, .trailing], 33)
-                    })
-                    .isDetailLink(presentsDetail)
+                            .onChange(of: user.chosenLocation, perform: { location in
+                                if let location = location{
+                                    cityString = location.description()
+                                }
+                            })
+                    }
+                )
+                .isDetailLink(presentsDetail)
                 
                 Spacer()
                 Button(action: {
