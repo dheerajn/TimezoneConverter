@@ -18,6 +18,7 @@ struct HomeTabBarView: View {
             VStack {
                 
                 SearchBarView(text: $locationSearchService.searchQuery, isActive: $searchBarIsActive)
+                    .accentColor(.blue)
                 
                 
                 if searchBarIsActive {
