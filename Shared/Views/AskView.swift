@@ -42,7 +42,7 @@ struct AskView: View {
                     .padding([.leading, .trailing], 33)
                 Spacer()
                 Button(action: {
-                    
+                    print("Navigated")
                 }) {
                     Text("Continue")
                         .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 51)

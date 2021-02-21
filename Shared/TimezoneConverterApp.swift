@@ -13,7 +13,7 @@ struct TimezoneConverterApp: App {
         WindowGroup {
             BaseView().environmentObject(ViewRouter())
             #if os(iOS)
-                OnboardingView()
+                ContentView()
             #elseif os(macOS)
                 ContentView()
             #endif

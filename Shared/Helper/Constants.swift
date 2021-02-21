@@ -34,4 +34,22 @@ struct Constants {
     
 }
 
+struct TimeData: Hashable {
+    let city: String
+    let timezone: String
+    let time: String
+    let date: String
+    let hoursBehind: String
+    let gmtOffset: String
+    let image: String
+    
+    static let dataItems = [
+        TimeData(city: "Sydney", timezone: "Eastern Daylight Time", time: "12.48am", date: "22nd Feb 2021", hoursBehind: "7 hours 30 mins behind", gmtOffset: "GMT +11.00hrs", image: "moon.fill"),
+        TimeData(city: "Mumbai", timezone: "Indian Standard Time", time: "10.30am", date: "20th Feb 2021", hoursBehind: "12 hours 30 mins", gmtOffset: "GMT +5.30hrs", image: "sun.max.fill"),
+        TimeData(city: "Mumbai", timezone: "Indian Standard Time", time: "10.30am", date: "20th Feb 2021", hoursBehind: "12 hours 30 mins", gmtOffset: "GMT +5.30hrs", image: "sun.max.fill"),
+        TimeData(city: "Sydney", timezone: "Eastern Daylight Time", time: "12.48am", date: "22nd Feb 2021", hoursBehind: "7 hours 30 mins behind", gmtOffset: "GMT +11.00hrs", image: "moon.fill"),
+        TimeData(city: "Sydney", timezone: "Eastern Daylight Time", time: "12.48am", date: "22nd Feb 2021", hoursBehind: "7 hours 30 mins behind", gmtOffset: "GMT +11.00hrs", image: "moon.fill"),
+        TimeData(city: "Sydney", timezone: "Eastern Daylight Time", time: "12.48am", date: "22nd Feb 2021", hoursBehind: "7 hours 30 mins behind", gmtOffset: "GMT +11.00hrs", image: "moon.fill")
+    ]
+}
 
