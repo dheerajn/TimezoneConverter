@@ -245,6 +245,8 @@
 				F94DC1EB25E181C40035CB35 /* LocationSearchService.swift */,
 			);
 			path = Location;
+               sourceTree = "<group>";
+        };
 		CF841B9D25E181EA00604CA2 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
