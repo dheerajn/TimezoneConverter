@@ -10,22 +10,40 @@ import SwiftUI
 struct SearchBarView: UIViewRepresentable {
     
     @Binding var text: String
+    @Binding var isActive: Bool
     
     class Coordinator: NSObject, UISearchBarDelegate {
         
         @Binding var text: String
+        @Binding var isActive: Bool
         
-        init(text: Binding<String>) {
+        init(text: Binding<String>, isActive: Binding<Bool>) {
             _text = text
+            _isActive = isActive
         }
         
         func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
             text = searchText
         }
+                
+        func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+            searchBar.setShowsCancelButton(true, animated: true)
+            self.isActive = true
+        }
+        
+        func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+            
+            searchBar.setShowsCancelButton(false, animated: true)
+            searchBar.resignFirstResponder()
+            self.isActive = false
+        }
+        
+        
+        
     }
     
     func makeCoordinator() -> SearchBarView.Coordinator {
-        return Coordinator(text: $text)
+        return Coordinator(text: $text, isActive: $isActive)
     }
     
     func makeUIView(context: UIViewRepresentableContext<SearchBarView>) -> UISearchBar {
@@ -35,6 +53,7 @@ struct SearchBarView: UIViewRepresentable {
         }
         searchBar.delegate = context.coordinator
         searchBar.searchBarStyle = .minimal
+        
         return searchBar
     }
     
