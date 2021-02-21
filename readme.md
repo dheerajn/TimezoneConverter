@@ -22,3 +22,9 @@ App make API calls to get the accurate data.
 ###### [Convert time](https://timezone.abstractapi.com/v1/convert_time")
 
 The API calls that **Time Buddy** makes are written in Combine
+
+### Some of the functionalites we are goign to include soon:
+- Adding friends
+- Integrating with teams or calendar
+- Showing free time available for meeting
+- Frequently used timezones
