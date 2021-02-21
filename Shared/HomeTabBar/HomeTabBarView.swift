@@ -29,6 +29,10 @@ struct HomeTabBarView: View {
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                         }
+                        .onTapGesture {
+                            // store chosen location
+                            
+                        }
                     }
                 }
                 
